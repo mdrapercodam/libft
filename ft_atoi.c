@@ -6,7 +6,7 @@
 /*   By: mdraper <mdraper@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/09 14:46:32 by mdraper       #+#    #+#                 */
-/*   Updated: 2023/10/10 14:15:34 by mdraper       ########   odam.nl         */
+/*   Updated: 2023/10/21 23:47:24 by mdraper       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_atoi(const char *nptr)
 			sign = -1;
 		nptr++;
 	}
-	while (*nptr >= '0' && *nptr <= '9')
+	while (ft_isdigit(*nptr))
 		result = result * 10 + (*nptr++ - '0');
 	return (sign * result);
 }

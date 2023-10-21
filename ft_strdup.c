@@ -6,7 +6,7 @@
 /*   By: mdraper <mdraper@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/09 16:24:34 by mdraper       #+#    #+#                 */
-/*   Updated: 2023/10/18 17:54:20 by mdraper       ########   odam.nl         */
+/*   Updated: 2023/10/21 23:48:56 by mdraper       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,7 @@ char	*ft_strdup(const char *s)
 	size_t	len;
 	char	*duplicate;
 
-	len = 0;
-	while (s[len] != '\0')
-		len++;
+	len = ft_strlen(s);
 	duplicate = (char *)malloc((len + 1) * sizeof(char));
 	if (!duplicate)
 		return (0);

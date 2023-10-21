@@ -6,7 +6,7 @@
 /*   By: mdraper <mdraper@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/05 12:50:14 by mdraper       #+#    #+#                 */
-/*   Updated: 2023/10/10 11:23:53 by mdraper       ########   odam.nl         */
+/*   Updated: 2023/10/21 23:43:13 by mdraper       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 	d = (unsigned char *)dest;
 	s = (unsigned const char *)src;
+	if (!dest && !src)
+		return (0);
 	while (n--)
 	{
 		*d++ = *s++;
