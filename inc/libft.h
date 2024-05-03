@@ -6,7 +6,7 @@
 /*   By: mdraper <mdraper@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/10 11:24:37 by mdraper       #+#    #+#                 */
-/*   Updated: 2024/05/01 16:09:33 by mdraper       ########   odam.nl         */
+/*   Updated: 2024/05/03 18:59:49 by mdraper       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,7 @@ void	ft_putnbr_fd(int n, int fd);
 
 /*				  FT_STR				*/
 char	**ft_split(char const *s, char c);
+int		ft_strchr_count(const char *s, int c);
 char	*ft_strchr(const char *s, int c);
 int		ft_strcmp(const char *s1, const char *s2);
 char	*ft_strdup(const char *s);
