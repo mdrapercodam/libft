@@ -53,7 +53,7 @@ This function checks if there are characters after the number.
 If so it will return an error.
 */
 
-static int	ft_check_char_after_digit(const char *str)
+int	ft_check_char_after_digit(const char *str)
 {
 	int		i;
 	int		x;
