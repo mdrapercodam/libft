@@ -153,6 +153,7 @@ void	ft_rotate_sort(t_pslst **stk_a, t_pslst **stk_b, bool ascending);
 /*				    INPUT				*/
 int		ft_check_string(const char *str);
 int		ft_check_spaces(const char *str);
+int		ft_check_char_after_digit(const char *str);
 int		ft_check_valid_int(const char *str);
 int		ft_check_value(t_pslst **head, int data);
 void	ft_free_lists(t_pslst **stk_a, t_pslst **stk_b, int err);
