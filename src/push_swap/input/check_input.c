@@ -23,7 +23,8 @@ int	ft_check_string(const char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (!ft_isdigit(str[i]) && str[i] != ' ' && str[i] != '-')
+		if (!ft_isdigit(str[i]) && str[i] != ' ' \
+			&& str[i] != '-' && str[i] != '+')
 			return (-1);
 		i++;
 	}
