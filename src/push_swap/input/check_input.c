@@ -64,7 +64,7 @@ int	ft_check_char_after_digit(const char *str)
 	{
 		while (str[i] == ' ')
 			i++;
-		if (str[i] == '-')
+		if (str[i] == '-' || str[i] == '+')
 		{
 			i++;
 			x = i;
@@ -93,11 +93,13 @@ int	ft_check_valid_int(const char *str)
 	len_str = ft_strlen(str);
 	if (!ft_check_char_after_digit(str))
 		return (-1);
-	if (str[i] == '-')
+	if (str[i] == '-' || str[i] == '+')
 	{
 		if (len_str > 11)
 			return (-1);
-		else if (len_str == 11 && ft_strcmp(str, "-2147483648") > 0)
+		else if (len_str == 11 \
+			&& ((str[i] == '-' && ft_strcmp(str, "-2147483648") > 0) \
+			|| (str[i] == '+' && ft_strcmp(str, "+2147483647") > 0)))
 			return (-1);
 	}
 	else
