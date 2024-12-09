@@ -6,7 +6,7 @@
 /*   By: mdraper <mdraper@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/10 11:24:37 by mdraper       #+#    #+#                 */
-/*   Updated: 2024/07/17 11:38:48 by mdraper       ########   odam.nl         */
+/*   Updated: 2024/12/09 16:50:32 by mdraper       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,10 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }	t_list;
+
+/*				 FT_FREE				*/
+void	ft_free_array(char ***str);
+void	ft_free_string(char **str);
 
 /*				  FT_IS					*/
 int		ft_isalnum(int c);
