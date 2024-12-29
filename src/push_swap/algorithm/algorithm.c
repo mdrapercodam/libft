@@ -49,12 +49,10 @@ As last it is doing the operation.
 
 void	ft_push_a(t_pslst **stk_a, t_pslst **stk_b)
 {
-	int	nodes_a;
 	int	nodes_b;
 	int	idx_a;
 	int	moves;
 
-	nodes_a = ft_count_nodes((*stk_a));
 	nodes_b = ft_count_nodes((*stk_b));
 	while (nodes_b > 0)
 	{
@@ -63,7 +61,6 @@ void	ft_push_a(t_pslst **stk_a, t_pslst **stk_b)
 		if (moves > 1)
 			moves -= ft_find_rotate(stk_a, stk_b, idx_a, 0);
 		nodes_b--;
-		nodes_a++;
 		if (moves == 1)
 			moves -= ft_pa(stk_a, stk_b, 1);
 		if (moves != 0)
