@@ -34,6 +34,8 @@ typedef struct s_list
 
 /*				 FT_FREE				*/
 void	ft_free_array(char ***str);
+void	ft_free_double(double **value);
+void	ft_free_int(int **value);
 void	ft_free_string(char **str);
 
 /*				  FT_IS					*/
