@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void ft_free_int(int **value)
+void	ft_free_int(int **value)
 {
 	if (!value || !*value)
 		return ;
