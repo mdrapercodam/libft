@@ -51,8 +51,8 @@ int		ft_isupper(int c);
 int		ft_isxdigit(int c);
 
 /*				  FT_LIS				*/
-void	ft_lstadd_back(t_list **lst, t_list *new);
-void	ft_lstadd_front(t_list **lst, t_list *new);
+void	ft_lstadd_back(t_list **lst, t_list *add_new);
+void	ft_lstadd_front(t_list **lst, t_list *add_new);
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
